@@ -1,31 +1,18 @@
-import './App.css';
-import { restaurants } from '/materials/mock.js';
+import { useState } from 'react';
+import Layout from './components/Layout/Layout';
+import Restaurant from './components/Restaurant/Restaurant';
+import Tabs from './components/Tabs/Tabs';
+import { restaurants } from '/data/restaurants.js';
 
-function App() {
+const App = () => {
+  const [activeId, setActiveId] = useState(restaurants[0].id);
+
   return (
-    <>
-      {restaurants.map(({ id, name, menu, reviews }) => (
-        <div key={id}>
-          <h2>Название ресторана: {name}</h2>
-          <h3>Меню: {name}</h3>
-          <ul>
-            {menu.map(({ id, name }) => (
-              <li key={id}>{name}</li>
-            ))}
-          </ul>
-          <h3>Отзывы об {name}</h3>
-          <ul>
-            {reviews.map(({ id, user, text }) => (
-              <li key={id}>
-                <p>Автор: {user}</p>
-                <p>Отзыв: {text}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </>
+    <Layout>
+      <Tabs restaurants={restaurants} activeId={activeId} onChange={setActiveId} />
+      <Restaurant data={restaurants.find(r => r.id === activeId)} />
+    </Layout>
   );
-}
+};
 
 export default App;
