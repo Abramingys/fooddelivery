@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import styles from './Counter.module.scss';
 
-const Counter = ({ onChange }) => {
+const Counter = () => {
   const [count, setCount] = useState(0);
 
   const decrement = () => {
     setCount((prev) => {
       const newVal = Math.max(prev - 1, 0);
-      if (onChange) onChange(newVal);
+
       return newVal;
     });
   };
@@ -15,7 +15,7 @@ const Counter = ({ onChange }) => {
   const increment = () => {
     setCount((prev) => {
       const newVal = Math.min(prev + 1, 5);
-      if (onChange) onChange(newVal);
+      
       return newVal;
     });
   };

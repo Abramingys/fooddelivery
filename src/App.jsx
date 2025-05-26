@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import Layout from './components/Layout/Layout';
 import Restaurant from './components/Restaurant/Restaurant';
-import Tabs from './components/Tabs/Tabs';
+import Tabs from './components/RestaurantsTabs/RestaurantsTabs';
 import { restaurants } from '/data/restaurants.js';
 
 const App = () => {
-  const [activeId, setActiveId] = useState(restaurants[0].id);
+  const [activeRestaurantId, setActiveRestaurantId] = useState(restaurants[0].id);
 
   return (
     <Layout>
-      <Tabs restaurants={restaurants} activeId={activeId} onChange={setActiveId} />
-      <Restaurant data={restaurants.find(r => r.id === activeId)} />
+      <Tabs restaurants={restaurants} activeId={activeRestaurantId} onChange={setActiveRestaurantId} />
+      <Restaurant data={restaurants.find(({ id }) => id === activeRestaurantId)} />
     </Layout>
   );
 };
