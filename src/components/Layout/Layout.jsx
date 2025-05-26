@@ -1,5 +1,6 @@
-import Header from '../Header/Header.jsx';
 import Footer from '../Footer/Footer.jsx';
+import Header from '../Header/Header.jsx';
+
 import styles from './Layout.module.scss';
 
 const Layout = ({ children }) => {
