@@ -1,0 +1,38 @@
+.counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  button {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #2C3E50;
+    font-weight: bold;
+
+    background-color: white;
+    border: 1px solid #2C3E50;
+    border-radius: 4px;
+
+    cursor: pointer;
+    user-select: none;
+
+    &:disabled {
+      opacity: 0.4;
+
+      cursor: not-allowed;
+    }
+  }
+
+  span {
+    min-width: 20px;
+
+    color: #2C3E50;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+  }
+}

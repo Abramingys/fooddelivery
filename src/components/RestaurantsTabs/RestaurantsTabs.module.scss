@@ -1,0 +1,35 @@
+.tabs {
+  margin: 16px 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.tabButton {
+  padding: 8px 16px;
+
+  font-size: 16px;
+
+  background-color: #E0E0E0;
+  border: none;
+  border-radius: 4px;
+
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #D0D0D0;
+  }
+}
+
+.active {
+  color: white;
+  font-weight: bold;
+
+  background-color: #2C3E50;
+
+  cursor: default;
+  pointer-events: none;
+}

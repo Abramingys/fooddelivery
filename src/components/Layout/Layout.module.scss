@@ -1,0 +1,14 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  padding: 24px;
+  flex: 1;
+
+  background-color: #F5F5F5;
+}
