@@ -1,0 +1,65 @@
+.reviews {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.review {
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+  transition: background 0.2s;
+}
+.review:last-child {
+  border-bottom: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.user {
+  font-weight: 600;
+  color: #2a7ae2;
+}
+
+.rating {
+  background: #f5c518;
+  color: #222;
+  border-radius: 6px;
+  padding: 0.2em 0.7em;
+  font-size: 0.95em;
+  font-weight: 500;
+}
+
+.text {
+  color: #333;
+  margin: 0;
+}
+
+.empty {
+  color: #aaa;
+  text-align: center;
+  padding: 2rem 0;
+}
