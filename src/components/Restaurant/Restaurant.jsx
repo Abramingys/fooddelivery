@@ -1,5 +1,7 @@
 import Dish from '../Dish/Dish';
+import ReviewForm from '../ReviewForm/ReviewForm';
 import Reviews from '../Reviews/Reviews';
+
 import styles from './Restaurant.module.scss';
 
 const Restaurant = ({ data }) => {
@@ -19,6 +21,7 @@ const Restaurant = ({ data }) => {
           <Reviews key={review.id} review={review} />
         ))}
       </div>
+      <ReviewForm />
     </section>
   );
 };

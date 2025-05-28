@@ -1,6 +1,9 @@
-import styles from './Counter.module.scss';
+import { useCounter } from '../../hooks/use-counter';
+import styles from '../Counter/Counter.module.scss';
 
-const Counter = ({ count, decrement, increment }) => {
+const DishCounter = () => {
+  const { count, decrement, increment } = useCounter();
+
   return (
     <div className={styles.counter}>
       <button onClick={decrement} disabled={count === 0} type='button'>
@@ -14,4 +17,4 @@ const Counter = ({ count, decrement, increment }) => {
   );
 };
 
-export default Counter;
+export default DishCounter;

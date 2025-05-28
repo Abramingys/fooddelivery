@@ -1,9 +1,8 @@
-import Counter from '../Counter/Counter';
+import DishCounter from '../DishCounter/DishCounter';
 
 import styles from './Dish.module.scss';
 
 const Dish = ({ dish }) => {
-  
   return (
     <div className={styles.dish}>
       <div className={styles.info}>
@@ -11,7 +10,7 @@ const Dish = ({ dish }) => {
         <p>Price: ${dish.price}</p>
         <p>Ingredients: {dish.ingredients.join(', ')}</p>
       </div>
-      <Counter />
+      <DishCounter />
     </div>
   );
 };

@@ -1,65 +1,79 @@
 .reviews {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  padding: 2rem;
   margin-top: 2rem;
+
+  padding: 2rem;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  background: #FFF;
+  border-radius: 12px;
 }
 
 .title {
-  font-size: 2rem;
   margin-bottom: 0.5rem;
+
   color: #222;
+  font-size: 2rem;
 }
 
 .subtitle {
-  color: #888;
   margin-bottom: 1.5rem;
+
+  color: #888;
 }
 
 .list {
-  list-style: none;
-  padding: 0;
   margin: 0;
+
+  padding: 0;
+
+  list-style: none;
 }
 
 .review {
-  border-bottom: 1px solid #eee;
   padding: 1rem 0;
+
+  border-bottom: 1px solid #EEE;
+
   transition: background 0.2s;
 }
+
 .review:last-child {
   border-bottom: none;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .user {
+  color: #2A7AE2;
   font-weight: 600;
-  color: #2a7ae2;
 }
 
 .rating {
-  background: #f5c518;
-  color: #222;
-  border-radius: 6px;
   padding: 0.2em 0.7em;
+
+  color: #222;
   font-size: 0.95em;
   font-weight: 500;
+
+  background: #F5C518;
+  border-radius: 6px;
 }
 
 .text {
-  color: #333;
   margin: 0;
+
+  color: #333;
 }
 
 .empty {
-  color: #aaa;
-  text-align: center;
   padding: 2rem 0;
+
+  color: #AAA;
+  text-align: center;
 }
