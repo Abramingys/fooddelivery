@@ -56,7 +56,7 @@ export const restaurants = [
     ],
     reviews: [
       {
-        id: "53b642d7-5e86-4717-a466-0640a1dee076",
+        id: "53b642d7-5e86-4717-a466-0640a1dee077",
         user: "Diana",
         text: "Perfect Margarita",
         rating: 5,
@@ -100,7 +100,7 @@ export const restaurants = [
     ],
     reviews: [
       {
-        id: "53b642d7-5e86-4717-a466-0640a1dee076",
+        id: "53b642d7-5e86-4717-a466-0640a1dee078",
         user: "Agata",
         text: "Best bakery",
         rating: 5,

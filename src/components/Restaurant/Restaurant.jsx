@@ -1,4 +1,7 @@
 import Dish from '../Dish/Dish';
+import ReviewForm from '../ReviewForm/ReviewForm';
+import Reviews from '../Reviews/Reviews';
+
 import styles from './Restaurant.module.scss';
 
 const Restaurant = ({ data }) => {
@@ -12,6 +15,13 @@ const Restaurant = ({ data }) => {
           <Dish key={dish.id} dish={dish} />
         ))}
       </div>
+      <h2 className={styles.title}>Customer Reviews</h2>
+      <div className={styles.reviews}>
+        {data.reviews.map((review) => (
+          <Reviews key={review.id} review={review} />
+        ))}
+      </div>
+      <ReviewForm />
     </section>
   );
 };
