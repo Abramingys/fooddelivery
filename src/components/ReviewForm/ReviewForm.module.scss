@@ -1,0 +1,121 @@
+.form {
+  margin: 2rem auto;
+
+  padding: 2rem;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  background: #FFF;
+  border-radius: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+label {
+  color: #2A7AE2;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  padding: 0.5rem 0.8rem;
+
+  color: red;
+  font-size: 1rem;
+
+  background: #FAFBFC;
+  border: 1px solid #D0D0D0;
+  border-radius: 6px;
+
+  transition: border 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border: 1.5px solid #2A7AE2;
+  outline: none;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.submit {
+  padding: 0.5rem 1.2rem;
+
+  color: #FFF;
+  font-weight: 600;
+
+  background: #2A7AE2;
+  border: none;
+  border-radius: 6px;
+
+  transition: background 0.2s;
+
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: #1A5BB8;
+}
+
+.reset {
+  padding: 0.5rem 1.2rem;
+
+  color: #333;
+  font-weight: 500;
+
+  background: #EEE;
+  border: none;
+  border-radius: 6px;
+
+  transition: background 0.2s;
+
+  cursor: pointer;
+}
+
+.reset:hover {
+  background: #DDD;
+}
+
+.stars {
+  margin-top: 0.2rem;
+
+  display: flex;
+  gap: 0.3rem;
+
+  font-size: 2rem;
+}
+
+.star,
+.starSelected {
+  -webkit-text-stroke: 1px #F5C518;
+
+  color: transparent;
+
+  transition: color 0.2s;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.starSelected {
+  -webkit-text-stroke: 0;
+
+  color: #F5C518;
+  text-shadow: 0 1px 4px #F5C51844;
+}
+
+.star:focus,
+.starSelected:focus {
+  outline: 2px solid #2A7AE2;
+}
